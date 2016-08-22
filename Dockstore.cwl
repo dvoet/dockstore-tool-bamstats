@@ -10,11 +10,11 @@ description: |
     ```
     Usage:
     # fetch CWL
-    $> dockstore tool cwl --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.25-5 > Dockstore.cwl
+    $> dockstore tool cwl --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.25-7 > Dockstore.cwl
     # make a runtime JSON template and edit it (or use the content of sample_configs.json in this git repo)
     $> dockstore tool convert cwl2json --cwl Dockstore.cwl > Dockstore.json
     # run it locally with the Dockstore CLI
-    $> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.25-5 \
+    $> dockstore tool launch --entry quay.io/briandoconnor/dockstore-tool-bamstats:1.25-7 \
         --json Dockstore.json
     ```
 
@@ -25,7 +25,7 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/collaboratory/dockstore-tool-bamstats:1.25-6"
+    dockerPull: "quay.io/briandoconnor/dockstore-tool-bamstats:1.25-7"
 
 hints:
   - class: ResourceRequirement
